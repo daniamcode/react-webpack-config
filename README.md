@@ -3,7 +3,7 @@ The idea of this repo is to configure a project from scratch, without using crea
 I follow https://www.youtube.com/watch?v=ansUGkcrhwY
 
 1. npm init -y -> creates the package.json
-2. We create index.html
+2. We create index.html and README file
 3. We serve it using servor (see "serve" command on package.json) (not needed for the webpack project, but nice to learn)
 4. Use git
     - git init
