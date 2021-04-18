@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "servor src index.html 8080 --reload",
-    "build": "webpack"
+    "serve:first": "servor src index.html 8080 --reload",
+    "serve:second": "servor dist index.html 8080 --reload",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "daniamcode",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.33.2",
