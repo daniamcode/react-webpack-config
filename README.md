@@ -1,6 +1,8 @@
-The idea of this repo is to configure a project from scratch, without using create-react-app
+The idea of this repo is to configure a React App from scratch, without using create-react-app
 
 I follow https://www.youtube.com/watch?v=ansUGkcrhwY
+
+(4 main concepts: entry point, output, loaders)
 
 1. npm init -y -> creates the package.json
 2. We create index.html and README file
@@ -18,3 +20,6 @@ I follow https://www.youtube.com/watch?v=ansUGkcrhwY
 9. Add a index.html file in the dist folder (changing index.js for main.js on the script, without type="module"), and run serve:second 
 10. Add "dev": "webpack --mode development" to the package.json to stop using servor at some point, and specify --mode production on build script
 11. Add --watch, so the main.js on dist is generated automatically
+12. npm i react react-dom and add react to my src/index.js. Now we need a loader for webpack in order to compile jsx
+13. npm i @babel/core babel-loader @babel/preset-react -D, so that webpack con compile jsx from React. A preset is a bunch of plugins
+14. create a webpack.config.js file with the babel rule
