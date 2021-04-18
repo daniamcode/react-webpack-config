@@ -11,3 +11,7 @@ I follow https://www.youtube.com/watch?v=ansUGkcrhwY
     - git commit -m "initial commit"
     - git remote add origin https://github.com/daniamcode/react-webpack-config.git
     - git push
+5. Add a index.js with some code (I have to export it, and say on the index.html that the script is of module type)   
+6. npm i webpack webpack-cli -D
+7. Add "build": "webpack" in the scripts section of the package.json
+8. npm run build, and the dist folder is generated (src/index.js is the default entry point)
