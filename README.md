@@ -2,7 +2,7 @@ The idea of this repo is to configure a React App from scratch, without using cr
 
 I follow https://www.youtube.com/watch?v=ansUGkcrhwY
 
-(4 main concepts: entry point, output, loaders)
+(4 main webpack concepts: entry point, output, loaders and plugins)
 
 1. npm init -y -> creates the package.json
 2. We create index.html and README file
@@ -22,4 +22,7 @@ I follow https://www.youtube.com/watch?v=ansUGkcrhwY
 11. Add --watch, so the main.js on dist is generated automatically
 12. npm i react react-dom and add react to my src/index.js. Now we need a loader for webpack in order to compile jsx
 13. npm i @babel/core babel-loader @babel/preset-react -D, so that webpack con compile jsx from React. A preset is a bunch of plugins
-14. create a webpack.config.js file with the babel rule
+14. create a webpack.config.js file with the babel rule for react (presets: ["@babel/preset-react"])
+15. Add more rules, for example to consider the optional chaining case, that is new javascript syntax. For that, I will use a plugin: npm install --save-dev @babel/plugin-syntax-optional-chaining. NOTE: This plugin is included in @babel/preset-env
+16. npm i @babel/preset-env -D, so all ES versions of javascript are considered
+17. Add some more things to webpack.config, like the output file

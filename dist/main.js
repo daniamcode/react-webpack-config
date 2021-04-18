@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\n // export const secondVersion = () => {\n//     document.getElementById(\"app\").innerText = \"Second version!!\"\n// };\n// secondVersion();\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h3\", null, \"Third version, adding React\"), document.getElementById('app'));\n\n//# sourceURL=webpack://react-webpack-config/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\n // export const secondVersion = () => {\n//     document.getElementById(\"app\").innerText = \"Second version!!\"\n// };\n// secondVersion();\n// to consider optional chaining\n\nconst obj = {};\nobj?.hi;\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"h3\", null, \"Third version, adding React!\"), document.getElementById('app'));\n\n//# sourceURL=webpack://react-webpack-config/./src/index.js?");
 
 /***/ }),
 
