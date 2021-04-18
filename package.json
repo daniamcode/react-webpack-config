@@ -1,0 +1,12 @@
+{
+  "name": "react-webpack-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "servor src index.html 8080 --reload"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
