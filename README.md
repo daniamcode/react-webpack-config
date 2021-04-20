@@ -26,3 +26,6 @@ I follow https://www.youtube.com/watch?v=ansUGkcrhwY
 15. Add more rules, for example to consider the optional chaining case, that is new javascript syntax. For that, I will use a plugin: npm install --save-dev @babel/plugin-syntax-optional-chaining. NOTE: This plugin is included in @babel/preset-env
 16. npm i @babel/preset-env -D, so all ES versions of javascript are considered
 17. Add some more things to webpack.config, like the output file
+18. npm i html-webpack-plugin -D, to create our dist/index.html automatically, and add it to the webpack.config.js file, under plugins
+19. Delete dist/index.html and type npm run dev, and we see that dist/index.html is created automatically. This is necessary, because output is main.js by default, but we can change it and put a hash to make it unique if we need to cache it or whatever, but then we need to update our dist/index.html to reference to the right js file
+20. Change the title and add a template to HTMLWebpackPlugin on the package.json.js, so it will detect our <div id="app">. We have to delete th <script type="module" src="./index.js"></script> on src/index.html so the template won't use it
