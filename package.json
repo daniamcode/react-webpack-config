@@ -1,13 +1,13 @@
 {
   "name": "react-webpack-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "The idea of this repo is to configure a React App from scratch, without using create-react-app",
   "main": "index.js",
   "scripts": {
     "serve:first": "servor src index.html 8080 --reload",
     "serve:second": "servor dist index.html 8080 --reload",
     "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "dev": "webpack serve"
   },
   "keywords": [],
   "author": "daniamcode",
@@ -20,7 +20,8 @@
     "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.1",
     "webpack": "^5.33.2",
-    "webpack-cli": "^4.6.0"
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "react": "^17.0.2",
